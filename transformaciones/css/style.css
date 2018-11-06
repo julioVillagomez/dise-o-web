@@ -1,0 +1,100 @@
+div.cuadrado{
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* transition: all 1s linear; */
+    /* transition-delay: 2s ; */
+    transition-duration: 1s;
+    transition-property: all ;
+    transition-timing-function: linear;
+}
+
+#cuadrado1:hover{
+    transform: rotate(60deg);
+    /* transform: rotateX();
+    transform: rotateY();
+    transform: rotateZ() */
+}
+
+#cuadrado2:hover{
+    transform: scale(2,1);
+    /* transform: scaleX(), scaleY(), scaleZ() */
+}
+
+#cuadrado3:hover{
+    transform: translate(20px,30px);
+}
+#cuadrado4:hover{
+    transform: skew(20deg);
+    /* transform: skewX() skewY() */
+}
+
+#cuadrado5:hover{
+    transform: rotate(60deg) scale(2);
+}
+
+#cuadrado6:hover{
+    width: 500px;
+    background: purple;
+}
+
+div.cuadrado-animado{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    animation-name:cuadrado2; 
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div.cuadrado3d{
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
+div.cuadrado3d:hover{
+    /* transform: rotate3d(1,-1,0, 60deg); */
+    transform: scaleZ(5)
+}
+
+@keyframes cuadrado{
+    from{
+        background: yellow;
+        transform: rotate(0deg);
+    }
+    to{
+        background:blue;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cuadrado2{
+    0%{
+        background: yellow;
+        transform: rotate(0deg); 
+    }
+    25%{
+        background: purple;
+
+    }
+    50%{
+        background: green;
+
+    }
+    75%{
+        background: red;
+
+    }
+    100%{
+        background:blue;
+        transform: rotate(360deg);
+    }
+}
+/* ease - especifica un efecto de transición con un inicio lento, luego rápido y luego termina lentamente (esto es lo predeterminado)
+linear - especifica un efecto de transición con la misma velocidad de principio a fin
+ease-in - especifica un efecto de transición con un inicio lento
+ease-out - especifica un efecto de transición con un final lento
+ease-in-out - especifica un efecto de transición con un inicio y fin lentos */

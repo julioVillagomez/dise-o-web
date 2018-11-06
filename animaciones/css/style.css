@@ -1,0 +1,85 @@
+.gif{
+    position: relative;
+    width: 60px;
+    animation-name:animacion-gif; 
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+div.rectangulo{
+    width: 200px;
+    border: 1px solid red;
+    height: 20px;
+}
+div.progress{
+    width: 0;
+    height: 19.5px;
+    background: blue;
+
+    animation-name:barra; 
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: alternate;
+}
+
+div.cuadrado{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-top: 2px solid red;
+    animation-name:cuadrado; 
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+@keyframes animacion-gif{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes barra{
+    from{
+        width: 0%
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes cuadrado{
+    0%{
+        border: 2px solid black;
+        border-top: 2px solid red;
+    }
+    25%{
+        border: 2px solid black;
+        border-right: 2px solid red;
+    }
+
+    50%{
+        border: 2px solid black;
+        border-bottom: 2px solid red;
+    }
+
+    75%{
+        border: 2px solid black;
+        border-left: 2px solid red;
+    }
+
+    100%{
+        border: 2px solid black;
+        border-top: 2px solid red;
+    }
+}

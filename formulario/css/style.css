@@ -1,0 +1,48 @@
+#formulario{
+    width: 400px;
+}
+
+#formulario .form-group{
+    display: block;
+    padding: 10px;
+}
+
+#formulario .form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+#formulario .form-group input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0px;
+    /* border: 0px; */
+    /* border-bottom: 1px solid black; */
+}
+
+#formulario .form-group.invalid input{
+    border:1px solid red;
+}
+
+#formulario button{
+    width: 25%;
+    padding: 10px;
+    background: green;
+    color:white;
+    border: 1px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+}
+
+#formulario .form-group input:valid{
+    border: 1px solid green;
+}
+
+#formulario .form-group input:invalid{
+    border: 1px solid red;
+}

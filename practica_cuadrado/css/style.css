@@ -1,0 +1,58 @@
+div.cuadrado{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: cuadrado;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div.contenedor {
+    width: 200px;
+    background: transparent;
+    border: 1px solid blue;
+    height: 20px;
+}
+div.relleno{
+    width: 0;
+    height: 19px;
+    background: red;
+    animation-name: cargando;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cargando{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes cuadrado{
+    0%{
+        top:0;
+        left: 0;
+    }
+    25%{
+        left: 90%;
+        top:0
+    }
+    50%{
+        top: 500px;
+        left: 90%;
+    }
+    75%{
+        left: 0;
+        top: 500px;
+
+    }
+    100%{
+        top:0;
+        left: 0;
+    }
+}

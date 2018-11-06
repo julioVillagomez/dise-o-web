@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* a:link{
+    color: skyblue;
+}
+a:hover{
+    background: green;
+    font-size: 25px;
+} */
+
+/* a:visited{
+    color:yellow;
+} */
+
+/* a:active{
+    color:blue;
+} */
+
+/* input:focus{
+    background: purple;
+} */
+
+input:valid{
+    background: green;
+}
+
+input:invalid{
+    background: red;
+}
+
+
+/* table tr td:first-child{
+    color: blue;
+    font-size: 25px;
+    font-weight: bolder;
+} */
+
+
+/* table tr td:nth-child(odd){
+    color: blue;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+table tr td:nth-child(even){
+    color: red;
+    font-size: 25px;
+    font-weight: bolder;
+} */
+
+table{
+    font-size: 16px;
+}
+
+table tr:nth-last-child(1) {
+    background: rgba(0,0,255,0.5);
+}
+
+table tr:hover{
+    background: red;
+}
+
+
+.container{
+    width: 60%;
+    height: 70px;
+    background: skyblue;
+    margin: auto;
+    text-align: center;
+    line-height: 70px;
+}
+
+.container > nav > ul >li{
+    display: inline;
+    list-style: none;
+    padding: 10px;
+    background: blue;
+    margin-right: 3px;
+    border-radius: 5px;
+
+}
+
+.container > nav > ul >li > a{
+    text-decoration: none;
+    color:white;
+}
+
+.container > nav > ul >li:hover{
+    border: 2px solid green;
+    background: transparent;
+}
+
+.container > nav > ul >li:hover > a{
+    color:green;
+}
+
+.container > nav > ul >li.active{
+    border: 2px solid blue;
+    background: transparent;
+}
+
+.container > nav > ul >li.active > a{
+    color: blue;
+}

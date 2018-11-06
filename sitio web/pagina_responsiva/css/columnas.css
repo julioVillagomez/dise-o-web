@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*( 6 * 100 / 12) */
+
+[class*="col-"]{
+    padding-right: 10px;
+    min-height: 20px;
+    float: left;
+}
+
+.col-12{
+    background:blue;
+    width: 100%;
+}
+.col-11{
+    background:purple;
+    width: 91.66667%;
+}
+.col-10{
+    background: green;
+    width: 83.33333%;
+}
+
+.col-9{
+    width: 75%;
+    background: greenyellow;
+}
+
+.col-8{
+    background: rebeccapurple;
+    width: 66.66667%;
+}
+.col-7{
+    background: palegoldenrod;
+    width: 58.33333%
+}
+.col-6{
+    background: red;
+    width: 50%;
+}
+.col-5{
+    background: grey;
+    width: 41.66667%;
+}
+.col-4{
+    background:plum;
+    width: 33.33333%
+}
+.col-3{
+    background: purple;
+    width: 25%;
+}
+
+.col-2{
+    background: orange;
+    width: 16.66667%;
+}
+
+.col-1{
+    background: red;
+    width: 8.33333%
+}

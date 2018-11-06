@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    height: 70px;
+    background: orange;
+}
+
+div.imagen{
+    position: absolute;
+    top:10px;
+    left: 20px;
+    width: 100px;
+    height: 50px;
+    background: blue;
+}
+
+div.grupo_cuadrado{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background: gray;
+    top: 10px;
+    left: 590px;
+    padding-top:2px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+div.cuadrado{
+    /* margin-top:2px; */
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+}
+
+.amarillo{
+    background: yellow;
+}
+.verde{
+    background: green;
+}
+.morado{
+    background: purple;
+}
+
+.contenedor{
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    background: #dedede;
+    min-height: 500px;
+    margin-top:10px;
+}
+
+.menu{
+    position: absolute;
+    width: 300px;
+    background: blue;
+    min-height: 300px;
+    top:0;
+    left: 0;
+    
+}
+
+.menu nav ul li{
+    list-style: none;
+    padding-left: 10px;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.menu nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+.contenido{
+    position: absolute;
+    background: pink;
+    width: 700px;
+    min-height: 500px;
+    top: 0;
+    left: 300px;
+}
+
+.contenido article{
+    width: 200px;
+    background: purple;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 10px;
+    text-align: justify;
+}
+
+footer{
+    width: 1000px;
+    height: 70px;
+    background: black;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    color: wheat;
+}
+
