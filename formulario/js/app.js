@@ -103,3 +103,16 @@ function validacionRequired(elemento){
     return 0;
 }
 
+function tabla(nombre, ape_pat, ape_mat, edad) {
+    var tabla = document.querySelector("#tabla");
+    var tr = document.createElement("tr");
+    var cadena = "<td>" + nombre + "</td>" + "<td>" + ape_pat + "</td>" + "<td>" + ape_mat + "</td>" + "<td>" + edad + "</td>";
+    cadena += "<td> <button onclick='eliminar(this)' >Eliminar</button> </td>";
+    tr.innerHTML = cadena;
+
+    tabla.appendChild(tr);
+}
+
+function eliminar(event) {
+    event.parentNode.parentNode.remove();
+}

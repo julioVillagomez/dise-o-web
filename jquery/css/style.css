@@ -1,0 +1,19 @@
+small.invalid{
+    color:red;
+}
+
+input.invalid{
+    border: 1px solid red;
+}
+
+input.valid{
+    border: 1px solid green;
+}
+
+.cuadrado{
+    position:relative;
+    width: 200px;
+    height: 200px;
+    background: red;
+
+}

@@ -1,0 +1,68 @@
+html{
+    position: relative;
+    min-height: 100%
+}
+header{
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+body{
+    background-image: url('../images/descarga.jpg');
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.title-animation{
+    animation: title-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.form-animation{
+    position: relative;
+    left: -550px;
+}
+
+.text-animation{
+    opacity: 0;
+}
+
+.bg-white-transparente{
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color:black
+    
+}
+
+@keyframes title-animation{
+    0%{
+        font-size: 0rem;
+    }
+
+    75%{
+        font-size: 3rem;
+    }
+
+    100%{
+        font-size: 2.5rem;
+    }
+
+    /* from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    } */
+}
+
